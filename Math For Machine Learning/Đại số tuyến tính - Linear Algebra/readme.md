@@ -24,12 +24,47 @@
    + Nếu chuyển vị liên hợp của một ma trận phức bằng chính nó thì ta nói ma trận đó Hermitian.
 
 2. Phép nhân hai ma trận.
-   + Ma trận **A**(m x n), **B**(n x p), **C = AB** => **C**(m x p
-   +  <img src="image/Nhan%20hai%20ma%20tran.png" alt="drawing" width="500" height="100"/>
-   + Để nhân được hai ma trận số hàng của ma trận thứ nhất phải bằng số cột của ma trận thứ hai.
-   + Các tính chất của phép nhân ma trận :
-     + Không có tính chất giao hoán: AB # BA.
-     + Có tính chất kết hợp: ABC = (AB)C = A(BC)
-     + Phân phối với phép cộng: A(B + C) = AB + AC
-     + Chuyển vị của một tích bằng tích các chuyển vị theo thứ tự ngược lại.
-     + <img src="image/Tich_chuyen_vi.png" alt="drawing" width="500" height="50"/>
+   1. Tích vô hướng của ma trận(??)
+      + Ma trận **A**(m x n), **B**(n x p), **C = AB** => **C**(m x p)
+        + <img src="image/Nhan%20hai%20ma%20tran.png" alt="drawing" width="500" height="100"/>
+      + Để nhân được hai ma trận số hàng của ma trận thứ nhất phải bằng số cột của ma trận thứ hai.
+      + Các tính chất của phép nhân ma trận :
+        + Không có tính chất giao hoán: AB # BA.
+        + Có tính chất kết hợp: ABC = (AB)C = A(BC)
+        + Phân phối với phép cộng: A(B + C) = AB + AC
+        + Chuyển vị của một tích bằng tích các chuyển vị theo thứ tự ngược lại.
+        + <img src="image/Tich_chuyen_vi.png" alt="drawing" width="500" height="30"/>
+   2. Tích vô hướng của vector (Inner product).
+      + Theo định nghĩa trên nếu coi vector là một trường hợp đặc biệt của ma trận. Tích vô hướng của hai vector **x, y**(1 x n):
+      + <img src="image/Tich_vo_huong_vector.png" alt="drawing" width="500" height="100"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
