@@ -81,3 +81,49 @@ theo quy tắc bàn tay phải.
 
 
 
+
+
+### 4. Ma trận đơn vị(identity matrix) và ma trận nghịch đảo(inverse matrix).
+**1. Ma trận đơn vị.**
+   + `Đường chéo chính ` của một ma trận là tập hợp các điểm có chỉ số hàng và cột như nhau.
+   + Một ma trận đơn vị bậc nlà một ma trận đặc biệt trong R (n x n) với các phần tử trên đường chéo chính bằng 1, 
+   các phần tử còn lại bằng 0. (I - identity matrix )
+   + Ma trận đơn vị I(n x n) bậc n có tính chất đặc biệt trong phép nhân:
+     + A (m x n): AI = A.
+     + B (n x m): IB = B.
+     + **x**(n x 1): Ix = x.
+   
+**2. Ma trận nghịch đảo.**
+   + Ma trận vuông A (n x n) là `khả nghịch(invertible, nonsingular hoặc nondegenerate)` nếu tồn tại ma trận vuông B (n x n) 
+   sao cho AB = I. Ma trận B được gọi là ma trận nghịch đảo của A.
+   + <p>Text <sup>chỉ số trên</sup></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
