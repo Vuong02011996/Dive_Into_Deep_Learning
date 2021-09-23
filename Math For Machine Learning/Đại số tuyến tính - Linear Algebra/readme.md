@@ -23,10 +23,11 @@
    + `Chuyển vị liên hợp` (conjugate transpose): là chuyển vị ma trận có phần tử là số phức. (H- Hermitian)
    + Nếu chuyển vị liên hợp của một ma trận phức bằng chính nó thì ta nói ma trận đó Hermitian.
 
-2. Phép nhân hai ma trận.
+2. Phép nhân vô hướng.
    1. Tích vô hướng của ma trận(??)
       + Ma trận **A**(m x n), **B**(n x p), **C = AB** => **C**(m x p)
-        + <img src="image/Nhan%20hai%20ma%20tran.png" alt="drawing" width="500" height="100"/>
+        ![](image/Nhan%20hai%20ma%20tran.png =500x50)
+        + <img src="image/Nhan%20hai%20ma%20tran.png" alt="drawing" width="500" height="50"/>
       + Để nhân được hai ma trận số hàng của ma trận thứ nhất phải bằng số cột của ma trận thứ hai.
       + Các tính chất của phép nhân ma trận :
         + Không có tính chất giao hoán: AB # BA.
@@ -35,11 +36,17 @@
         + Chuyển vị của một tích bằng tích các chuyển vị theo thứ tự ngược lại.
         + <img src="image/Tich_chuyen_vi.png" alt="drawing" width="500" height="30"/>
    2. Tích vô hướng của vector (Inner product).
-      + Theo định nghĩa trên nếu coi vector là một trường hợp đặc biệt của ma trận. Tích vô hướng của hai vector **x, y**(1 x n):
-      + <img src="image/Tich_vo_huong_vector.png" alt="drawing" width="500" height="100"/>
+      + Theo định nghĩa trên nếu coi vector là một trường hợp đặc biệt của ma trận. Tích vô hướng của hai vector **x, y**(n x 1):
+      + <img src="image/Tich_vo_huong_vector.png" alt="drawing" width="500" height="50"/>
+      + Nếu tích vô hướng của hai vector khác không bằng không. Hai vector đó vuông góc với nhau.
 
-
-
+   3. Tích vô hưởng của vector với ma trận.
+      + Phép nhân của một ma trận A(m x n) với vector x(n x 1) là một vector b (m x 1) 
+      + <img src="image/Nhan_vo_huong_ma_tran_vector.png" alt="drawing" width="500" height="50"/>
+3. Phép nhân có hướng.
+   1. Nhân có hướng của ma trận (Hadamard hay element wise)
+      + Tích Hadamard của hai ma trận cùng kích thước A, B (m x n) là ma trận C (m x n):
+      + <img src="image/Hadamard.png" alt="drawing" width="500" height="50"/>
 
 
 
