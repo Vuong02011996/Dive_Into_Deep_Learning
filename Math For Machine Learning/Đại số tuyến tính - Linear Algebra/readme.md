@@ -24,7 +24,7 @@ của ma trận ban đầu. (T).
 + Nếu chuyển vị liên hợp của một ma trận phức bằng chính nó thì ta nói ma trận đó Hermitian.
 
 ### 2. Phép nhân vô hướng.
-#### Tích vô hướng của ma trận(??)
+**1. Tích vô hướng của ma trận(??)**
 + Ma trận **A**(m x n), **B**(n x p), **C = AB** => **C**(m x p)
   + <img src="image/Nhan%20hai%20ma%20tran.png" alt="drawing" width="500" height="100"/>
 + Để nhân được hai ma trận số hàng của ma trận thứ nhất phải bằng số cột của ma trận thứ hai.
@@ -34,22 +34,22 @@ của ma trận ban đầu. (T).
   + Phân phối với phép cộng: A(B + C) = AB + AC
   + Chuyển vị của một tích bằng tích các chuyển vị theo thứ tự ngược lại.
   + <img src="image/Tich_chuyen_vi.png" alt="drawing" width="500" height="30"/>
-#### Tích vô hướng của hai vector (Inner product).
+**2. Tích vô hướng của hai vector (Inner product).**
 + Theo định nghĩa trên nếu coi vector là một trường hợp đặc biệt của ma trận. Tích vô hướng của hai vector **x, y**(n x 1):
 + <img src="image/Tich_vo_huong_vector.png" alt="drawing" width="500" height="100"/>
 + Nếu tích vô hướng của hai vector khác không bằng không. Hai vector đó vuông góc với nhau.
 + Ý nghĩa hình học Euclide:
-+ <img src="image/hinh_hoc_tich_vo_huong.png" alt="drawing" width="500" height="30"/>
++ <img src="image/hinh_hoc_tich_vo_huong.png" alt="drawing" width="200" height="30"/>
 
-#### Tích vô hưởng của vector với ma trận.
+**3. Tích vô hưởng của vector với ma trận.**
 + Phép nhân của một ma trận A(m x n) với vector x(n x 1) là một vector b (m x 1) 
 + <img src="image/Nhan_vo_huong_ma_tran_vector.png" alt="drawing" width="500" height="100"/>
 ### 3. Phép nhân có hướng.
-#### Nhân có hướng của ma trận (Hadamard hay element wise)
+**1. Nhân có hướng của ma trận (Hadamard hay element wise)**
 + Tích Hadamard của hai ma trận cùng kích thước A, B (m x n) là ma trận C (m x n):
-+ <img src="image/Hadamard.png" alt="drawing" width="500" height="30"/>
++ <img src="image/Hadamard.png" alt="drawing" width="200" height="30"/>
 
-#### Nhân có hướng của hai vector 
+**2. Nhân có hướng của hai vector** 
 + [ref](https://apecceosummit2017.com.vn/tich-vo-huong-tich-co-huong/)
 + Tích có hướng của hai vector la một vector giả có phương vuông góc với mặt phẳng chứa hai vector đầu vào, chiều 
 theo quy tắc bàn tay phải.
