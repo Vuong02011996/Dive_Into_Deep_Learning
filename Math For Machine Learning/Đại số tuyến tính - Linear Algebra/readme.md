@@ -55,34 +55,6 @@ của ma trận ban đầu. (T).
 theo quy tắc bàn tay phải.
 + <img src="image/Nhan_co_huong_hai_vector.png" alt="drawing" width="500" height="100"/>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### 4. Ma trận đơn vị(identity matrix) và ma trận nghịch đảo(inverse matrix).
 **1. Ma trận đơn vị.**
    + `Đường chéo chính ` của một ma trận là tập hợp các điểm có chỉ số hàng và cột như nhau.
@@ -96,10 +68,17 @@ theo quy tắc bàn tay phải.
 **2. Ma trận nghịch đảo.**
    + Ma trận vuông A (n x n) là `khả nghịch(invertible, nonsingular hoặc nondegenerate)` nếu tồn tại ma trận vuông B (n x n) 
    sao cho AB = I. Ma trận B được gọi là ma trận nghịch đảo của A.
-   + <p>Text <sup>chỉ số trên</sup></p>
-
-
-
+   + Nếu A khả nghịch thì ma trận nghịch đảo (B) thường kí hiệu là: A<sup>-1</sup>
+   + Ý nghĩa:
+   + <img src="image/ma_tran_nghich_dao.png" alt="drawing" width="500" height="300"/>
+   + Giả sử ma trận A, B khả nghịch thì tích của chúng cũng khả nghịch: (AB)<sup>-1</sup> = B<sup>-1</sup>A<sup>-1</sup>. Giống 
+    với tính chất chuyển vị của tích ma trận.
+   
+**3. Một số ma trận khác.**
++ Ma trận đường chéo (diagonal matrix )
++ Ma trận tam giác trên (upper triangular matrix )
++ Ma trận tam giác dưới (lower triangular matrix )
+    
 
 
 
