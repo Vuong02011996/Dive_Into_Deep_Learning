@@ -70,15 +70,91 @@ theo quy tắc bàn tay phải.
    sao cho AB = I. Ma trận B được gọi là ma trận nghịch đảo của A.
    + Nếu A khả nghịch thì ma trận nghịch đảo (B) thường kí hiệu là: A<sup>-1</sup>
    + Ý nghĩa:
-   + <img src="image/ma_tran_nghich_dao.png" alt="drawing" width="500" height="300"/>
+   + <img src="image/ma_tran_nghich_dao.png" alt="drawing" width="500" height="200"/>
    + Giả sử ma trận A, B khả nghịch thì tích của chúng cũng khả nghịch: (AB)<sup>-1</sup> = B<sup>-1</sup>A<sup>-1</sup>. Giống 
     với tính chất chuyển vị của tích ma trận.
    
 **3. Một số ma trận khác.**
-+ Ma trận đường chéo (diagonal matrix )
-+ Ma trận tam giác trên (upper triangular matrix )
++ Ma trận đường chéo (diagonal matrix ): Ma trận chỉ có các thành phần trên đường chéo khác 0.
++ Ma trận tam giác trên (upper triangular matrix ): ma trận có tất cả các thành phần dưới đường chéo chính = 0.
 + Ma trận tam giác dưới (lower triangular matrix )
++ Các hệ phương trình tuyến tính mà ma trận hệ số có dạng tam giác thường được quan tâm vì chúng có thể được giải với 
+chi phí tính toán thấp.
++ Phép khử Gauss là thuật toán dùng để:
+  + Tìm `nghiệm` của hệ phương trình tuyến tính.
+  + Tìm `hạng` của một ma trận.
+  + Tìm `ma trận nghịch đảo` của ma trận vuông khả nghịch.
     
+### 5. Định thức(determinant)
++ Kí hiệu det(A) - định thức chỉ có ở ma trận vuông.
++ Định nghĩa.
++ Tính chất:
+  + Một ma trận bất kì và chuyển vị của nó có định thức như nhau.
+  + Định thức của ma trận đường chéo và vuông bằng tích các phần tử trên đường chéo chính.
+  + Định thức của ma trận đơn vị bằng 1.
+  + Định thức của một tích bằng tích các định thức.(A, B là hai ma trận vuông cùng chiều.)
+  + Nếu một ma trận có một hàng hoặc một cột bằng 0 thì định thức của nó bằng 0.
+  + Một ma trận khả nghịch khi và chỉ khi định thức của nó khác 0.
+  + Nếu một ma trận khả nghịch thì định thức của ma trận nghịch đảo của nó bằng nghịch đảo định thức của nó..
+
+
+### 6. Tổ hợp tuyển tính(Linear combination), không gian sinh(span space).
+6.1 Tổ hợp tuyến tính.
++ Vector **a1, ..., an** (nx1), x1, ..., xn: **b** = **a1**x1 + ... + **an**xn. **b** được gọi là một tổ hợp tuyến tính 
+của **a1, ..., an**.
++ Tương tự : **b** = **A**x **b** là một tổ hợp tuyến tính các cột của A.
++ Tập hợp tất cả các vector(**a1, .. an**) có thể biểu diễn được dưới dạng một tổ hợp tuyến tính các cột của ma trận A 
+được gọi là `không gian sinh(span)` của các cột ma trận đó. Kí hiệu: span(**a1, .. an**)
++ Nếu phương trình : 0 = x1**a1** + x2**a2** + · · · + xn**an**:
+  + Có nghiệm duy nhất `x1 = x2 = .. = xn = 0`.Ta nói hê {**a1, .. an**}: là một `hệ đôc lập tuyến tính`(linear independence)
+  + Tồn tại `xi # 0` sao cho phương trình trên thỏa mãn. Ta nói đó là một hệ `phụ thuộc tuyến tính`.(linnear dependence)
+  + Tính chất:
+    + Một hệ là `phụ thuộc tuyến tính` nếu và chỉ nếu `tồn tại một vector` trong hệ đó là `tổ hợp tuyến tính` của các `vector còn lại`.
+    + `Tập hợp con khác rỗng` của một hệ độc lập tuyến là một hệ `độc lập tuyến tính`.
+    + Tập hợp các `cột của một ma trận khả nghịch` tạo thành một hệ `độc lập tuyến tính`.
+    + Nếu **A** là ma trận cao (m > n) số hàng lớn hơn số cột thì tồn tại vector **b** sao cho **Ax** = **b** vô nghiêm.
+    + Nếu n > m thì n vector bất kì trong không gian m chiều tạo thành một hệ phụ thuộc tuyến tính.
+  
++ `Cơ sở(basic)` của một không gian:
+  + Một hệ các vector {**a1, .. an**} trong không gian m chiều V = R(m) được gọi là `một cơ sở` nếu thỏa hai điều kiện:
+    + V = span(**a1, .. an**).
+    + {**a1, .. an**}: là một `hệ độc lập tuyến tính`.
+  + Khi đó mọi vector **b** thuộc V điều có thể biểu diễn duy nhất dưới một tổ hợp tuyến của các **ai**.
+  
++ `Range(Image) và Null space(Kernel)`:
+  + R(A): là tập hợp các điểm là tổ hợp tuyến tính các cột của A. Hay chính là span các cột của A.
+  + R(A): là một không gian con của R(m) với số chiều chính bằng số lượng lớn nhất các cột của A độc lập tuyến tính.
+  + `dim(R(A)) + dim(N (A)) = n`
+
+
+###7. Hạng(rank) của ma trận.
++ Xét **A**(m x n) hạng của **A** kí hiệu rank(**A**) được định nghĩa là `số lượng lớn nhất các cột` của nó tạo thành một hệ 
+`độc lập tuyến tính`.
++ Tính chất:
+  + Một ma trận có hạng bằng 0 khi và chỉ khi nó là ma trận 0.
+  + Hạng của ma trận bằng hạng của ma trận chuyển vị.
+  + Hạng của ma trận không thể lớn hơn số hàng hoặc số cột của nó. rank(**A**) ≤ min(m, n)
+  + rank(**AB**) ≤ min(rank(**A**), rank(**B**))
+  + rank(**A** + **B**) ≤ rank(**A**) + rank(**B**)
+  + rank(**A**) + rank(**B**) − n ≤ rank(**AB**): **A** (m x n), **B** (n x k). Bất đằng thức : Sylvester về hạng.
+  + Xét một ma trận vuông A(n x n) thì các điều dưới đây là tương đương:
+    + **A** là một ma trận khả nghịch.
+    + det(**A**) # 0.
+    + Các cột của **A** tạo thành một cơ sở trong không gian n chiều.
+    + rank(**A**) = n.
+
+
+### 8. Hệ trưc chuẩn((orthonormal) , ma trận trực giao((orthogonal).
++ Một hệ cơ sở {**u1, .. , un**} thuộc R(m) được gọi là trực giao nếu mỗi vector khác không và tích hai vector bất kì bằng 0.
++ Một hệ cơ sở {**u1, .. , un**} thuộc R(m) được gọi là trực chuẩn nếu nó là một hệ trực giao và độ dài Euclidean (L2 Norm) của 
+mỗi vector bằng 1.
+
+
+
+
+
+
+
 
 
 
