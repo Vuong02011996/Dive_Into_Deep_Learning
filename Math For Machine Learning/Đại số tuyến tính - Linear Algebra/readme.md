@@ -18,8 +18,8 @@
 
 ### 1. Chuyển vị(transpose) và Hermitian.
 + `Ma trận chuyển vị`: là ma trận được nhận từ ma trận cũ thông qua phép phản xạ gương qua đường chéo chính 
-của ma trận ban đầu. (T).
-+ `Ma trận A đối xứng` (symmetric matrix): nếu A chuyển vị = A.
+của ma trận ban đầu. (**A**<sup>T</sup>).
++ `Ma trận A đối xứng` (symmetric matrix): nếu **A**<sup>T</sup> = **A**.
 + `Chuyển vị liên hợp` (conjugate transpose): là chuyển vị ma trận có phần tử là số phức. (H- Hermitian)
 + Nếu chuyển vị liên hợp của một ma trận phức bằng chính nó thì ta nói ma trận đó Hermitian.
 
@@ -29,9 +29,9 @@ của ma trận ban đầu. (T).
   + <img src="image/Nhan%20hai%20ma%20tran.png" alt="drawing" width="500" height="100"/>
 + Để nhân được hai ma trận số hàng của ma trận thứ nhất phải bằng số cột của ma trận thứ hai.
 + Các tính chất của phép nhân ma trận :
-  + Không có tính chất giao hoán: AB # BA.
-  + Có tính chất kết hợp: ABC = (AB)C = A(BC)
-  + Phân phối với phép cộng: A(B + C) = AB + AC
+  + Không có tính chất giao hoán: **AB** # **BA**.
+  + Có tính chất kết hợp: ABC = (**AB**)**C** = **A**(**BC)**
+  + Phân phối với phép cộng: **A**(**B** + **C**) = **AB** + **AC**
   + Chuyển vị của một tích bằng tích các chuyển vị theo thứ tự ngược lại.
   + <img src="image/Tich_chuyen_vi.png" alt="drawing" width="500" height="30"/>
 **2. Tích vô hướng của hai vector (Inner product).**
@@ -66,12 +66,12 @@ theo quy tắc bàn tay phải.
      + **x**(n x 1): Ix = x.
    
 **2. Ma trận nghịch đảo.**
-   + Ma trận vuông A (n x n) là `khả nghịch(invertible, nonsingular hoặc nondegenerate)` nếu tồn tại ma trận vuông B (n x n) 
-   sao cho AB = I. Ma trận B được gọi là ma trận nghịch đảo của A.
+   + Ma trận vuông **A** (n x n) là `khả nghịch(invertible, nonsingular hoặc nondegenerate)` nếu tồn tại ma trận vuông **B** (n x n) 
+   sao cho **AB** = I. Ma trận **B** được gọi là ma trận nghịch đảo của **A**.
    + Nếu A khả nghịch thì ma trận nghịch đảo (B) thường kí hiệu là: A<sup>-1</sup>
    + Ý nghĩa:
    + <img src="image/ma_tran_nghich_dao.png" alt="drawing" width="500" height="200"/>
-   + Giả sử ma trận A, B khả nghịch thì tích của chúng cũng khả nghịch: (AB)<sup>-1</sup> = B<sup>-1</sup>A<sup>-1</sup>. Giống 
+   + Giả sử ma trận **A**, **B** khả nghịch thì tích của chúng cũng khả nghịch: (AB)<sup>-1</sup> = B<sup>-1</sup>A<sup>-1</sup>. Giống 
     với tính chất chuyển vị của tích ma trận.
    
 **3. Một số ma trận khác.**
@@ -124,6 +124,7 @@ của **a1, ..., an**.
 + `Range(Image) và Null space(Kernel)`:
   + R(A): là tập hợp các điểm là tổ hợp tuyến tính các cột của A. Hay chính là span các cột của A.
   + R(A): là một không gian con của R(m) với số chiều chính bằng số lượng lớn nhất các cột của A độc lập tuyến tính.
+  + Mỗi vector trong N (A) chính là một bộ các hệ số làm cho tổ hợp tuyến tính các cột của A tạo thành một vector 0.
   + `dim(R(A)) + dim(N (A)) = n`
 
 

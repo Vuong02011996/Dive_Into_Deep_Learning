@@ -50,7 +50,7 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
-.env
+my_utils/.env
 
 .idea/
 task.md
